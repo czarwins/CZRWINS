@@ -1,0 +1,101 @@
+body {
+  background: black;
+}
+ul {
+  height: 200vh;
+  width: 300wh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: .25fr 1fr 1fr 1fr;
+  grid-template-areas: "nav nav nav"
+                        "Tab2 Tab2 Tab2"
+                        "Tab6 Tab7 Tab8 "
+                        "Tab10 Tab11 Tab12"
+                        "Footer Footer Footer";
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: white;
+  font-family: Avenir, Heveltica, Arial, san-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  
+}
+li {
+  padding: 1em;
+  background: #F9423A;
+  margin: 5px;
+}
+
+li:nth-child(2),
+li:nth-child(6){
+  background: #444;
+}
+li:nth-child(8),
+li:nth-child(10){
+  background: #4794B8;
+}
+li:nth-child(3),
+li:nth-child(7),
+li:nth-child(9) {
+  background: #FF9124;
+}
+
+#one{
+  grid-area: nav;
+  background: pink;
+  
+  text-align: center;
+}
+
+#two{
+   grid-area: Tab2;
+   display: flex;
+   justify-content: center; 
+}
+
+#three{
+   grid-area: Tab3;
+}
+#four{
+   grid-area: Tab4;
+}
+
+#five{
+  grid-area: Ads1;
+}
+
+#six{
+   grid-area: Tab6;
+}
+
+#seven{
+   grid-area: Tab7; 
+   display: flex;
+   justify-content: center; 
+   /* align-items: center; */
+}
+
+#eight{
+   grid-area: Tab8;
+}
+
+#nine{
+  grid-area: Ads2;
+}
+
+#ten{
+   grid-area: Tab10;
+}
+
+#eleven{
+   grid-area: Tab11;
+}
+
+#twelve{
+   grid-area: Tab12;
+}
+
+#thirteen{
+   grid-area: Footer;
+}
